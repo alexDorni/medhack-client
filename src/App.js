@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import {main} from "./index.js";
 
 function App() {
   const [data, setData] = useState([{}])
@@ -14,15 +15,18 @@ function App() {
     )
   }, [])
 
+
+
   return (
     <div>
-      {(typeof data.members === 'undefined') ? (
-        <p>Loading...</p>
-      ) : (
-        data.members.map((member, i) => (
-          <p key={i}>{member}</p>
-        ))
-      )}
+        {main()}
+      {/*{(typeof data.members === 'undefined') ? (*/}
+      {/*  <p>Loading...</p>*/}
+      {/*) : (*/}
+      {/*  data.members.map((member, i) => (*/}
+      {/*    <p key={i}>{member}</p>*/}
+      {/*  ))*/}
+      {/*)}*/}
     </div>
   )
 }
