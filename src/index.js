@@ -63,7 +63,7 @@ function infoAboutOurApp() {
 function startButton() {
     return (
         <div class="buttons">
-            <Link to="/login/login" class="btn-hover color-1">Începe</Link>
+            <button class="btn-hover color-1">Începe</button>
         </div>
     )
 }
