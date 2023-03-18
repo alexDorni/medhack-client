@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {main} from "./index.js";
+import {mainLogin} from "./login/login"
+
 
 function App() {
   const [data, setData] = useState([{}])
@@ -19,7 +21,9 @@ function App() {
 
   return (
     <div>
-        {main()}
+        { //main()
+           mainLogin()
+        }
       {/*{(typeof data.members === 'undefined') ? (*/}
       {/*  <p>Loading...</p>*/}
       {/*) : (*/}
